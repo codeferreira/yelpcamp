@@ -8,7 +8,7 @@ router.get("/", function(req, res){
         if(err) {
             console.log(err);
         } else {
-            res.render("campgrounds/index",{campgrounds: campgrounds});
+            res.render("campgrounds/index",{campgrounds: campgrounds, page: 'campgrounds'});
         }
     });
 });
@@ -20,8 +20,9 @@ router.get("/new", middleware.isLoggedIn, function(req, res){
 
 router.get("/:id", function(req, res){
     Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground){
-        if(err){
-            console.log(err);
+        if(err || !foundCampground){
+            req.flash("error", "Campground not found!");
+            req.redirect("back");
         } else {
             res.render("campgrounds/show", {campground: foundCampground});
         }
@@ -33,11 +34,12 @@ router.post("/", middleware.isLoggedIn, function(req, res){
     var name = req.body.name;
     var image = req.body.image;
     var desc = req.body.description;
+    var price = req.body.price;
     var author = {
         id: req.user._id,
         username: req.user.username
     };
-    var newCampground = {name: name, image: image, description: desc, author: author};
+    var newCampground = {name: name, image: image, price: price, description: desc, author: author};
     Campground.create(newCampground, function(err, newCreated){
         if(err) {
             console.log(err);

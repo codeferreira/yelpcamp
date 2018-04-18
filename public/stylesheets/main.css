@@ -13,3 +13,8 @@ textarea {
 .delete-form {
     display: inline;
 }
+
+.user-form {
+    width: 30%;
+    margin: 25px auto;
+}
