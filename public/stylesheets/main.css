@@ -1,0 +1,15 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.delete-form {
+    display: inline;
+}
