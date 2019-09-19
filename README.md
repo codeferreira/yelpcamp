@@ -1,6 +1,15 @@
-# <center> YelpCamp</center>
+# YelpCamp
 
 Yelpcamp is a campsite evaluator where you can see campsite reviews before you plan your next camping trip.
+
+## Installation
+
+To install this project is simple, just follow the steps below.
+
+1. Clone the repositorie into you machine. `git clone https://github.com/JKFher/yelpcamp.git`
+2. Into the folder install the dependencies. `yarn` or `npm install`
+3. Run the application. `yarn start` or `npm start`
+4. Have fun!
 
 ## Tech
 
@@ -12,11 +21,10 @@ Yelpcamp is a personal project to learn more about JavaScript and mainly about [
 - MongoDB (Database)
 - Heroku (Deploy)
 
-## Instalation
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-To install this project is simple, just follow the steps below.
+Please make sure to update tests as appropriate.
 
-1. Clone the repositorie into you machine. `git clone https://github.com/JKFher/yelpcamp.git`
-2. Into the folder install the dependencies. `yarn` or `npm install`
-3. Run the application. `yarn start` or `npm start`
-4. Have fun!
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
