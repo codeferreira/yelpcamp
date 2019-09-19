@@ -5,7 +5,7 @@ Yelpcamp is a campsite evaluator where you can see campsite reviews before you p
 [![GitHub issues](https://img.shields.io/github/issues/JKFher/yelpcamp?style=flat-square)](https://github.com/JKFher/yelpcamp/issues)
 [![GitHub forks](https://img.shields.io/github/forks/JKFher/yelpcamp?style=flat-square)](https://github.com/JKFher/yelpcamp/network)
 [![GitHub stars](https://img.shields.io/github/stars/JKFher/yelpcamp?style=flat-square)](https://github.com/JKFher/yelpcamp/stargazers)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus?style=flat-square)](https://github.com/JKFher/yelpcamp/stargazers)
+[![GitHub](https://img.shields.io/github/license/JKFher/yelpcamp?style=flat-square)](https://github.com/JKFher/yelpcamp/license)
 
 ## Installation
 
